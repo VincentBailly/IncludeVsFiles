@@ -1,4 +1,4 @@
-[Trace  - 12:40:28.934] <syntax> Sending request: updateOpen (38). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:03.941] <syntax> Sending request: updateOpen (39). Response expected: yes. Current queue length: 0
 Arguments: {
     "changedFiles": [],
     "closedFiles": [],
@@ -11,7 +11,7 @@ Arguments: {
         }
     ]
 }
-[Trace  - 12:40:28.935] <semantic> Sending request: updateOpen (64). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:03.941] <semantic> Sending request: updateOpen (53). Response expected: yes. Current queue length: 0
 Arguments: {
     "changedFiles": [],
     "closedFiles": [],
@@ -24,13 +24,13 @@ Arguments: {
         }
     ]
 }
-[Trace  - 12:40:28.935] <syntax> Response received: updateOpen (38). Request took 1 ms. Success: true 
+[Trace  - 12:59:03.942] <syntax> Response received: updateOpen (39). Request took 1 ms. Success: true 
 Result: true
-[Trace  - 12:40:28.935] <syntax> Sending request: navtree (39). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:03.942] <syntax> Sending request: navtree (40). Response expected: yes. Current queue length: 0
 Arguments: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts"
 }
-[Trace  - 12:40:28.936] <syntax> Response received: navtree (39). Request took 1 ms. Success: true 
+[Trace  - 12:59:03.943] <syntax> Response received: navtree (40). Request took 2 ms. Success: true 
 Result: {
     "text": "<global>",
     "kind": "script",
@@ -48,173 +48,247 @@ Result: {
         }
     ]
 }
-[Trace  - 12:40:28.941] <semantic> Response received: updateOpen (64). Request took 6 ms. Success: true 
+[Trace  - 12:59:04.3] <semantic> Response received: updateOpen (53). Request took 62 ms. Success: true 
 Result: true
-[Trace  - 12:40:28.946] <semantic> Sending request: encodedSemanticClassifications-full (65). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:04.3] <semantic> Sending request: encodedSemanticClassifications-full (54). Response expected: yes. Current queue length: 0
 Arguments: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "start": 0,
     "length": 0
 }
-[Trace  - 12:40:28.946] <semantic> Response received: encodedSemanticClassifications-full (65). Request took 0 ms. Success: true 
+[Trace  - 12:59:04.22] <semantic> Response received: encodedSemanticClassifications-full (54). Request took 71 ms. Success: true 
 Result: {
     "spans": [],
     "endOfLineState": 0
 }
-[Trace  - 12:40:29.127] <syntax> Sending request: getOutliningSpans (40). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:04.132] <syntax> Sending request: getOutliningSpans (41). Response expected: yes. Current queue length: 0
 Arguments: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts"
 }
-[Trace  - 12:40:29.128] <syntax> Response received: getOutliningSpans (40). Request took 1 ms. Success: true 
+[Trace  - 12:59:04.133] <syntax> Response received: getOutliningSpans (41). Request took 1 ms. Success: true 
 Result: []
-[Trace  - 12:40:29.234] <semantic> Sending request: geterr (66). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:04.241] <semantic> Sending request: geterr (55). Response expected: yes. Current queue length: 0
 Arguments: {
     "delay": 0,
     "files": [
         "/home/vincent/repos/libVsInclude/B/foo.ts",
-        "/home/vincent/repos/libVsInclude/Files/foo.ts",
-        "/home/vincent/repos/libVsInclude/Files/index.ts",
         "/home/vincent/repos/libVsInclude/B/index.ts"
     ]
 }
-[Trace  - 12:40:29.237] <semantic> Event received: syntaxDiag (0).
+[Trace  - 12:59:04.247] <semantic> Event received: syntaxDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:29.243] <semantic> Event received: semanticDiag (0).
+[Trace  - 12:59:04.255] <semantic> Event received: semanticDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:29.244] <semantic> Event received: suggestionDiag (0).
+[Trace  - 12:59:04.256] <semantic> Event received: suggestionDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:29.245] <semantic> Event received: syntaxDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/foo.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:29.246] <semantic> Event received: semanticDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/foo.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:29.246] <semantic> Event received: suggestionDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/foo.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:29.247] <semantic> Event received: syntaxDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/index.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:29.258] <semantic> Event received: semanticDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/index.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:29.258] <semantic> Event received: suggestionDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/index.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:29.258] <semantic> Event received: syntaxDiag (0).
+[Trace  - 12:59:04.257] <semantic> Event received: syntaxDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/index.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:29.258] <semantic> Event received: semanticDiag (0).
+[Trace  - 12:59:04.257] <semantic> Event received: semanticDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/index.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:29.258] <semantic> Event received: suggestionDiag (0).
+[Trace  - 12:59:04.258] <semantic> Event received: suggestionDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/index.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:29.258] <semantic> Async response received: requestCompleted (66). Request took 24 ms.
-[Trace  - 12:40:30.150] <semantic> Event received: projectsUpdatedInBackground (0).
+[Trace  - 12:59:04.258] <semantic> Async response received: requestCompleted (55). Request took 17 ms.
+[Trace  - 12:59:05.119] <semantic> Event received: projectsUpdatedInBackground (0).
 Data: {
     "openFiles": [
-        "/home/vincent/repos/libVsInclude/Files/foo.ts",
-        "/home/vincent/repos/libVsInclude/Files/index.ts",
         "/home/vincent/repos/libVsInclude/B/index.ts",
         "/home/vincent/repos/libVsInclude/B/foo.ts"
     ]
 }
-[Trace  - 12:40:30.350] <semantic> Sending request: geterr (67). Response expected: yes. Current queue length: 0
+[Trace  - 12:59:05.289] <semantic> Event received: setTypings (0).
+Data: {
+    "projectName": "/dev/null/inferredProject4*",
+    "typeAcquisition": {
+        "enable": true,
+        "include": [],
+        "exclude": []
+    },
+    "compilerOptions": {
+        "module": 1,
+        "target": 3,
+        "jsx": 1,
+        "sourceMap": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "allowNonTsExtensions": true,
+        "noEmitForJsFiles": true
+    },
+    "typings": [
+        "/home/vincent/repos/libVsInclude/node_modules/typescript/lib/typescript.d.ts"
+    ],
+    "unresolvedImports": [],
+    "kind": "action::set"
+}
+[Trace  - 12:59:05.319] <semantic> Sending request: geterr (56). Response expected: yes. Current queue length: 0
 Arguments: {
     "delay": 0,
     "files": [
-        "/home/vincent/repos/libVsInclude/Files/foo.ts",
-        "/home/vincent/repos/libVsInclude/Files/index.ts",
         "/home/vincent/repos/libVsInclude/B/index.ts",
         "/home/vincent/repos/libVsInclude/B/foo.ts"
     ]
 }
-[Trace  - 12:40:30.353] <semantic> Event received: syntaxDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/foo.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:30.357] <semantic> Event received: semanticDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/foo.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:30.358] <semantic> Event received: suggestionDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/foo.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:30.359] <semantic> Event received: syntaxDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/index.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:30.359] <semantic> Event received: semanticDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/index.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:30.360] <semantic> Event received: suggestionDiag (0).
-Data: {
-    "file": "/home/vincent/repos/libVsInclude/Files/index.ts",
-    "diagnostics": []
-}
-[Trace  - 12:40:30.361] <semantic> Event received: syntaxDiag (0).
+[Trace  - 12:59:05.320] <semantic> Event received: syntaxDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/index.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:30.362] <semantic> Event received: semanticDiag (0).
+[Trace  - 12:59:05.321] <semantic> Event received: semanticDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/index.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:30.363] <semantic> Event received: suggestionDiag (0).
+[Trace  - 12:59:05.322] <semantic> Event received: suggestionDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/index.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:30.364] <semantic> Event received: syntaxDiag (0).
+[Trace  - 12:59:05.323] <semantic> Event received: syntaxDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:30.364] <semantic> Event received: semanticDiag (0).
+[Trace  - 12:59:05.323] <semantic> Event received: semanticDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:30.364] <semantic> Event received: suggestionDiag (0).
+[Trace  - 12:59:05.323] <semantic> Event received: suggestionDiag (0).
 Data: {
     "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
     "diagnostics": []
 }
-[Trace  - 12:40:30.365] <semantic> Async response received: requestCompleted (67). Request took 15 ms.
+[Trace  - 12:59:05.323] <semantic> Async response received: requestCompleted (56). Request took 4 ms.
+[Trace  - 12:59:05.743] <semantic> Event received: projectsUpdatedInBackground (0).
+Data: {
+    "openFiles": [
+        "/home/vincent/repos/libVsInclude/B/index.ts",
+        "/home/vincent/repos/libVsInclude/B/foo.ts"
+    ]
+}
+[Trace  - 12:59:05.853] <semantic> Event received: setTypings (0).
+Data: {
+    "projectName": "/dev/null/inferredProject4*",
+    "typeAcquisition": {
+        "enable": true,
+        "include": [],
+        "exclude": []
+    },
+    "compilerOptions": {
+        "module": 1,
+        "target": 3,
+        "jsx": 1,
+        "sourceMap": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "allowNonTsExtensions": true,
+        "noEmitForJsFiles": true
+    },
+    "typings": [
+        "/home/vincent/repos/libVsInclude/node_modules/typescript/lib/typescript.d.ts"
+    ],
+    "unresolvedImports": [],
+    "kind": "action::set"
+}
+[Trace  - 12:59:05.943] <semantic> Sending request: geterr (57). Response expected: yes. Current queue length: 0
+Arguments: {
+    "delay": 0,
+    "files": [
+        "/home/vincent/repos/libVsInclude/B/index.ts",
+        "/home/vincent/repos/libVsInclude/B/foo.ts"
+    ]
+}
+[Trace  - 12:59:05.947] <semantic> Event received: syntaxDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/index.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:05.952] <semantic> Event received: semanticDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/index.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:05.952] <semantic> Event received: suggestionDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/index.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:05.954] <semantic> Event received: syntaxDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:05.955] <semantic> Event received: semanticDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:05.955] <semantic> Event received: suggestionDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:05.955] <semantic> Async response received: requestCompleted (57). Request took 12 ms.
+[Trace  - 12:59:06.112] <semantic> Event received: projectsUpdatedInBackground (0).
+Data: {
+    "openFiles": [
+        "/home/vincent/repos/libVsInclude/B/index.ts",
+        "/home/vincent/repos/libVsInclude/B/foo.ts"
+    ]
+}
+[Trace  - 12:59:06.314] <semantic> Sending request: geterr (58). Response expected: yes. Current queue length: 0
+Arguments: {
+    "delay": 0,
+    "files": [
+        "/home/vincent/repos/libVsInclude/B/index.ts",
+        "/home/vincent/repos/libVsInclude/B/foo.ts"
+    ]
+}
+[Trace  - 12:59:06.317] <semantic> Event received: syntaxDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/index.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:06.317] <semantic> Event received: semanticDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/index.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:06.318] <semantic> Event received: suggestionDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/index.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:06.319] <semantic> Event received: syntaxDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:06.320] <semantic> Event received: semanticDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:06.320] <semantic> Event received: suggestionDiag (0).
+Data: {
+    "file": "/home/vincent/repos/libVsInclude/B/foo.ts",
+    "diagnostics": []
+}
+[Trace  - 12:59:06.322] <semantic> Async response received: requestCompleted (58). Request took 8 ms.
